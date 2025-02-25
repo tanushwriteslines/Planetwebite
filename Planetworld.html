@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet World</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Sigmar&display=swap');
+
+
+
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-weight: 300;
+            color: white;
+            
+        }
+        body{
+            font-family: "Bebas Neue", serif;
+            background-color: rgb(43, 40, 40);
+        }
+        header{
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            
+        }
+        ul li a{
+            margin: 0 10px;
+            border: 2px solid;
+            text-decoration: none;
+            padding: 0 10px;
+            border-radius: 50px;
+            
+        }
+        .logo{
+            font-family: "Sigmar", serif;
+            border: 2px solid white;
+            font-weight: 700;
+            padding: 0 20px;
+
+        }
+        .signup{
+            background-color: white;
+            color: black;
+            transition: background-color 0.5s ease, transform 0.2s ease;
+          
+
+        }
+        .signup:hover{
+            background-color: black;
+            color:white;
+         
+        }
+        main{
+            display: flex;
+            height: 90vh;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0px 150px;
+            
+        }
+        main h2{
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        main p{
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31.5px;
+            margin: 30px 0px;
+
+        }
+        .contentright img{
+
+        animation: float 4s ease-in-out infinite;
+            
+        }
+        .contentleft{
+            flex: 1;
+        }
+        .contentmid{
+            font-family: "Inconsolata", serif;
+            flex: 1;
+        }
+        .contentright{
+            flex: 1;
+        }
+        .merc{
+            max-width: 400px;
+            height: auto;
+            margin-left: 20px;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: white;
+            outline: none;
+            border: none;
+            color: black;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: background-color 0.5s ease, transform 0.2s ease;
+        }
+        .btn:hover{
+            color: aliceblue;
+            background-color: black;
+            border: 2px solid white;
+        }
+        ul li a:hover{
+            color: black;
+            background-color: white;
+            transition: background-color 0.5s ease-in-out, transform 0.2s ease;
+           
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Octavarium</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy Now</a></li>
+                <li><a href="#">Sell Now</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contentleft">
+            <h2>Mercury</h2>
+        </div>
+        <div class="contentmid">
+            <p>Ever dreamed of owning a planet? Mercury, the closest world to the Sun, 
+                is up for grabs! With extreme temperatures, a rugged landscape, and a year that lasts just 88
+                 days, it's the ultimate property for those who like things fast and fiery. No atmosphere? No 
+                 problem—pure, unclaimed real estate with stunning sunrises.
+                 Act now—before someone else claims the first planet in the solar system!</p>
+                <a href="prank.html"><button class="btn">BUY NOW</button></a>
+        </div>
+        <div class="contentright">
+            <img src="mercury.png" alt="Failed To load Planet(sed)" class="merc">
+        </div>
+
+    </main>
+</body>
+</html>
